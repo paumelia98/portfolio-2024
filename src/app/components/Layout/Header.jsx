@@ -22,7 +22,7 @@ export const Header = () => {
         ></video>
         <video
           className="absolute top-0 left-0 w-full h-[50%] object-cover rounded-xl border-0 -z-10 block lg:hidden"
-          src="/hero-bg-mobile.mp4"
+          src="/hero-bg.mp4"
           autoPlay
           loop
           muted
