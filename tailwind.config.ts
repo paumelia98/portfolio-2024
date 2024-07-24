@@ -1,3 +1,4 @@
+import { inter_tight, unbounded } from "@/lib/fonts";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,10 +10,12 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        unbounded: ['var(--font-undbounded)'],
+        inter_tight: ['var(--font-inter_tight)']
+
+      }
     },
   },
   plugins: [],
