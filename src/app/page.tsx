@@ -2,7 +2,6 @@ import { unbounded } from "@/lib/fonts/index";
 import { inter_tight } from "@/lib/fonts/index";
 import { mr_dafoe } from "@/lib/fonts/index";
 import {Hero} from '@/app/components/Layout/Hero';
-import Papercanvas from '@/app/components/Papercanvas';
 
 export default function HomePage() {
   return (
