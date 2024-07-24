@@ -13,7 +13,7 @@ export const Header = () => {
       </div>
       <div className="relative h-full flex justify-center pt-28 lg:pt-60">
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover rounded-xl border-0 -z-10 hidden lg:block"
+          className="absolute top-0 left-0 w-full h-full object-cover rounded-b-xl border-0 -z-10 hidden lg:block"
           src="/hero-bg.mp4"
           autoPlay
           loop
@@ -21,7 +21,7 @@ export const Header = () => {
           playsInline
         ></video>
         <video
-          className="absolute top-0 left-0 w-full h-[50%] object-cover rounded-xl border-0 -z-10 block lg:hidden"
+          className="absolute top-0 left-0 w-full h-[50%] object-cover rounded-b-xl  border-0 -z-10 block lg:hidden"
           src="/hero-bg.mp4"
           autoPlay
           loop
