@@ -1,4 +1,4 @@
-import { inter_tight, unbounded } from "@/lib/fonts";
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,12 +9,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-      },
+      backgroundImage: {},
       fontFamily: {
-        unbounded: ['var(--font-undbounded)'],
-        inter_tight: ['var(--font-inter_tight)']
-
+        unbounded: ['var(--font-unbounded)'],
+        inter_tight: ['var(--font-inter-tight)'],
+        mr_dafoe: ['var(--font-mr_dafoe)']
       }
     },
   },
