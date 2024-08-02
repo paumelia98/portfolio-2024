@@ -1,4 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* globals.css */
+/* customCursor.css */
+/* globals.css */
+body {
+    cursor: none;
+  }
+  
+  .custom-cursor {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+    transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0); /* transparente por dentro */
+    transform: translate(-50%, -50%);
+  }
+  
+  .custom-cursor.link-hover {
+    width: 40px;
+    height: 40px;
+    border-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  }
+  
 

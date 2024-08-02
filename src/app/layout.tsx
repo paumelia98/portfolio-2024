@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
-
-
+import CustomCursor from "@/app/components/CustomCursor"; // Asegúrate de que la ruta sea correcta
 
 export const metadata: Metadata = {
   title: "Portfolio Pau Melià 2024",
@@ -16,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body >{children}</body>
+      <body>
+        <CustomCursor />
+        {children}
+      </body>
     </html>
   );
 }
