@@ -48,3 +48,7 @@ a, .icons {
 .bounce-animation {
   animation: bounce 2s infinite;
 }
+
+article:hover span {
+  opacity: 1;
+}
