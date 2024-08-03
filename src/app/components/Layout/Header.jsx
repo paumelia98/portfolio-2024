@@ -13,7 +13,7 @@ export const Header = () => {
         </div>
       </div>
       
-      <div className="relative h-full flex justify-center pt-16 lg:pt-52">
+      <div className="relative h-full flex justify-center pt-16 lg:pt-40">
         <video
           className="absolute top-0 left-0 w-full h-[50vh] lg:h-full object-cover rounded-b-xl border-0 -z-10  lg:block"
           src="/hero-bg.mp4"
