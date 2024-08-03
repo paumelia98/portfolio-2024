@@ -3,7 +3,7 @@
 export const Projects = () => {
     return (
       <>
-      <div className="p-4 lg:px-12 mt-12 font-inter_tight grid lg:grid-cols-4 grid-cols-1 gap-20">
+      <div className="p-4 lg:px-12 mt-12 font-inter_tight grid lg:grid-cols-4 grid-cols-1 lg:gap-20 gap-6">
       <div >
         <h2 className=" text-3xl font-medium">Projects</h2>
         <p className=" font-extralight mt-3">I have a proven track record of my own product and over 30 projects that have helped clients grow</p>
