@@ -35,3 +35,16 @@ a, .icons {
   border-width: 0.2px; 
    
 }
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce-animation {
+  animation: bounce 2s infinite;
+}
