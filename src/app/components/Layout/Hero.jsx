@@ -21,7 +21,7 @@ export const Hero = () => {
           <h1 className="font-unbounded text-3xl lg:text-6xl text-center font-medium masked-text">Quality Frontend Development</h1>
           <h2 className=" font-inter_tight text-base lg:text-2xl text-center font-normal mt-4 masked-text mx-2 text-black">I specialize in developing dynamic, user-friendly websites and apps that elevate user experience, optimize performance, and drive business growth.</h2>
           <div className="mx-auto lg:pb-0 pb-4 lg:hidden">
-            <a href="paumelia.com" className="bg-white text-black px-4 py-2 mx-auto mt-4 rounded-3xl font-semibold font-inter_tight hover:scale-105 mb-4 flex items-center gap-3"> <img src="/icons/gmail-color.svg" alt="" className=" w-4 h-4" />Contact me</a>
+            <a href="paumelia.com" className="bg-white text-black px-4 py-2 mx-auto mt-4 rounded-3xl font-semibold font-inter_tight hover:scale-105 mb-4 flex items-center gap-2"> <img src="/icons/gmail-color.svg" alt="" className=" w-4 h-4" />Contact me</a>
           </div>
 
           <div className="absolute bottom-20 left-0 p-4 lg:px-12 flex-col hidden lg:block">
