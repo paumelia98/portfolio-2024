@@ -21,12 +21,12 @@ export const Projects = () => {
         <p className="font-medium text-xl mt-4">Aprobatus <span className=" text-gray-400">/ Corporate Website</span></p>
         </article>
         <article>
-        <img src="/aprobatus.png" className="rounded-lg shadow-md w-[600px] h-auto" alt="" />
-        <p className="font-medium text-xl mt-4">Education Web <span className=" text-gray-400">/ Wordpress</span></p>
+        <img src="/campus.png" className="rounded-lg shadow-md w-[600px] h-auto" alt="" />
+        <p className="font-medium text-xl mt-4">Campus Virtual <span className=" text-gray-400">/ Laravel</span></p>
         </article>
         <article>
-        <img src="/aprobatus.png" className="rounded-lg shadow-md w-[600px] h-auto" alt="" />
-        <p className="font-medium text-xl mt-4">Education Web <span className=" text-gray-400">/ Wordpress</span></p>
+        <img src="/crossfit.png" className="rounded-lg shadow-md w-[600px] h-auto" alt="" />
+        <p className="font-medium text-xl mt-4">Crossfsit Web<span className=" text-gray-400">/ Wordpress</span></p>
         </article>
   
       </div>
