@@ -1,15 +1,15 @@
 export const NavbarPhone = ({ menuOpen, closeMenu }) => {
     return (
     
-        <div className={`lg:hidden fixed inset-x-0 bottom-0 bg-white p-4 rounded-t-xl shadow-lg transform ${menuOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'} transition-transform transition-opacity duration-300 ease-in-out`}>
+        <div className={`lg:hidden fixed inset-x-0 bottom-0 bg-white p-8 rounded-t-xl shadow-lg transform ${menuOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'} transition-transform  duration-300 ease-in-out`}>
           
-          <div className="mx-auto flex flex-col items-center">
+          <div className="mx-auto flex flex-col">
             
-              <a className="font-inter_tight text-black text-[16px] font-medium mx-auto ">Pau Melià Altadill</a>
+              <a className="font-inter_tight text-black text-[16px] font-medium  ">Pau Melià Altadill</a>
               <span className="font-inter_tight text-[12px] text-black font-light ">paumelia98@gmail.com</span>
           </div>
 
-          <div className=" flex flex-col gap-4 items-center">
+          <div className=" flex flex-col gap-4 mt-6">
        
               <ul className="space-y-2">
                 <li><a href="">Projects</a> </li>
@@ -21,16 +21,20 @@ export const NavbarPhone = ({ menuOpen, closeMenu }) => {
             
           </div>
 
-          <div className="mx-auto flex flex-col">
-          <img src="/signature.svg" alt="" className=" mx-auto mb-2 w-24" />
-              <div className="flex gap-2 mb-3 mx-auto">
+          <div className="mx-auto flex items-center">
+              <div className="flex gap-2 mb-3 absolute right-10 bottom-2">
                   <img src="icons/linkedin-color.svg" alt="" className="w-6" />
                   <img src="icons/github-color.svg" alt="" className="w-6" />
             
               </div>
-              
+              <div className="flex flex-col mt-6">
+          
+       
+              <img src="/signature.svg" alt="" className=" w-24" />
               <span className="font-inter_tight text-[12px] text-black font-light ">© 2024 Pau Melià.</span>
-              <span className="font-inter_tight text-[12px] text-black font-light "> </span>
+              </div>
+              
+            
 
           </div>
           
