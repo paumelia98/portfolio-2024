@@ -25,9 +25,9 @@ const CustomCursor = () => {
     canvas.style.left = 0;
     canvas.style.top = 0;
     canvas.style.pointerEvents = 'none';
-    canvas.style.zIndex = '9997'; // Asegúrate de que está por debajo del cursor visual
+    canvas.style.zIndex = '9997'; 
 
-    let points = []; // Almacena los puntos por los que pasa el cursor
+    let points = []; 
 
     const moveCursor = (e) => {
       cursor.style.left = `${e.clientX - cursor.offsetWidth / 2}px`;
@@ -43,7 +43,7 @@ const CustomCursor = () => {
       if (points.length > 1) {
         ctx.beginPath();
         ctx.lineWidth = 1;
-        ctx.strokeStyle = 'rgba(0, 0, 0, 1)'; // Hace el rastro totalmente negro
+        ctx.strokeStyle = 'rgba(0, 0, 0, 1)'; 
         for (let i = 1; i < points.length - 1; i++) {
           var xc = (points[i].x + points[i + 1].x) / 2;
           var yc = (points[i].y + points[i + 1].y) / 2;
