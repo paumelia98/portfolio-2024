@@ -21,19 +21,19 @@ export const NavbarPhone = ({ menuOpen, closeMenu }) => {
             
           </div>
 
-          <div className="mx-auto flex items-center">
-              <div className="flex gap-2 mb-3 absolute right-10 bottom-2">
+          <div className=" flex items-center justify-between">
+              
+              <div className="flex flex-col mt-6">
+          
+       
+                <img src="/signature.svg" alt="" className=" w-24" />
+                <span className="font-inter_tight text-[12px] text-black font-light ">© 2024 Pau Melià.</span>
+              </div>
+              <div className="flex gap-2 ">
                   <img src="icons/linkedin-color.svg" alt="" className="w-6" />
                   <img src="icons/github-color.svg" alt="" className="w-6" />
             
               </div>
-              <div className="flex flex-col mt-6">
-          
-       
-              <img src="/signature.svg" alt="" className=" w-24" />
-              <span className="font-inter_tight text-[12px] text-black font-light ">© 2024 Pau Melià.</span>
-              </div>
-              
             
 
           </div>
