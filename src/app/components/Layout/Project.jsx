@@ -17,7 +17,7 @@ export const Project = ({ title, imageUrl, videoUrl, stack, subtitle, link }) =>
             ) : (
                 <video
                     src={videoUrl}
-                    className="rounded-lg shadow-md w-[680px] h-[382px] object-cover"
+                    className="rounded-lg shadow-md lg:w-[680px] lg:h-[382px] object-cover"
                     autoPlay
                     loop
                     muted
