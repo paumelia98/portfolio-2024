@@ -1,20 +1,8 @@
 "use client";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export const Project = ({ title, imageUrl, videoUrl, stack, subtitle, link }) => {
     const [hovered, setHovered] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setHovered(false); // Reset hovered state on scroll
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
         <a
@@ -22,7 +10,6 @@ export const Project = ({ title, imageUrl, videoUrl, stack, subtitle, link }) =>
             className="relative hover:scale-105"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
-            onTouchStart={() => setHovered(true)} // Handle touch start
         >
             <span className="absolute lg:right-10 right-2 top-2 bg-white px-2 py-1 rounded-lg text-sm">{stack}</span>
             {!hovered ? (
