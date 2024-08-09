@@ -19,14 +19,14 @@ export const Header = () => {
     <>
       <div className="flex items-center justify-between w-full p-4 lg:px-12 bg-[#f7f7f9] rounded-t-xl border-0 z-10">
         <header className="flex flex-col">
-          <a href='' className="font-inter_tight text-black text-[16px] font-medium ">Pau Melià Altadill</a>
-          <span className="font-inter_tight text-[12px] text-black font-light ">Frontend Developer</span>
+          <a href='' className=" text-black text-[16px] font-medium ">Pau Melià Altadill</a>
+          <span className=" text-[12px] text-black font-light ">Frontend Developer</span>
         </header>
        
      
         <div className="flex gap-4 items-center">
-          <span className="font-inter_tight text-[14px] underline lg:block hidden">Download CV</span>
-          <span className="font-inter_tight text-[14px] lg:block hidden">Contact</span>
+          <span className=" text-[14px] underline lg:block hidden">Download CV</span>
+          <span className=" text-[14px] lg:block hidden">Contact</span>
           <div className='flex gap-2'>
           <a href="/es"><img src="/flags/es-flag.svg" alt="" className='w-4 hover:scale-110' /></a>
          <a href="/en"> <img src="/flags/uk-flag.svg" alt="" className='w-4 hover:scale-110' /></a>
