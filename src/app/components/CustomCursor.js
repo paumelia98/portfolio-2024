@@ -38,7 +38,7 @@ const CustomCursor = () => {
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       let currentTime = Date.now();
-      points = points.filter(p => currentTime - p.time < 100);
+      points = points.filter(p => currentTime - p.time < 120);
 
       if (points.length > 1) {
         ctx.beginPath();

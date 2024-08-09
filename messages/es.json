@@ -11,8 +11,18 @@
       "contactMe": "Contáctame"
   },
   
-  "Projects": {
+  
+    "Projects": {
       "title": "Proyectos",
-      "description" : " He desarrollado con éxito varios proyectos que han contribuido al crecimiento de los clientes."
+      "description": "He desarrollado con éxito varios proyectos que han contribuido al crecimiento de los clientes.",
+      "description_portfolio2024": "Mi actual portfolio, destacando un enfoque en detalles minuciosos y un diseño minimalista pero innovador.",
+      "description_laLiga": "Desarrollé una web para la cobertura en tiempo real de La Liga, ofreciendo resultados en directo, clasificaciones y videos resumenes de los partidos.",
+      "description_aprobatus": "Una web que generó más de 17,000 solicitudes de información en su primer año, demostrando la efectividad de su diseño y funcionalidad.",
+      "description_campusVirtual": "Una web multipágina para un campus virtual con más de 3,000 alumnos, incluyendo funciones de mensajería privada, calendarios y clases online, mejorando la experiencia educativa.",
+      "description_crossfit": "Desarrollo de una web adaptada a las necesidades del cliente, centrado en el diseño, para una empresa de CrossFit.",
+      "description_portfolio2022": "Portfolio personal antiguo."
+    }
+   
   }
-}
+  
+

@@ -13,7 +13,12 @@
 
     "Projects": {
       "title": "Projects",
-      "description":"I have successfully completed several projects that have contributed to client growth"
-      
+      "description": "I have successfully completed several projects that have contributed to client growth.",
+      "description_portfolio2024": "My current portfolio, focusing on meticulous details and a minimalist innovative design.",
+      "description_laLiga": "I developed a website for real-time coverage of La Liga, featuring live scores, standings, and video highlights",
+      "description_aprobatus": "A website that generated over 17,000 information requests in its first year, proving the effectiveness of its design and functionality.",
+      "description_campusVirtual": "A multi-page website for a virtual campus with over 3,000 students, including private messaging, calendars, and online classes, enhancing the educational experience.",
+      "description_crossfit": "Developed a website tailored to the client's needs, focused on design, for a CrossFit company.",
+      "description_portfolio2022": "Former personal portfolio."
     }
   }
