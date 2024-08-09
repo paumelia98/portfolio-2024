@@ -1,0 +1,19 @@
+{
+    "Hero": {
+      "title": "Quality Frontend Development",
+      "subtitle": "I specialize in developing dynamic, user-friendly websites and apps that elevate user experience, optimize performance, and drive business growth.",
+      "download": "Download CV",
+      "projects": "Projects",
+      "aboutMe": "About me",
+      "experience": "Experience",
+      "contactMe": "Contact me"
+    }
+    ,
+    
+
+    "Projects": {
+      "title": "Projects",
+      "description":"I have successfully completed several projects that have contributed to client growth"
+      
+    }
+  }
