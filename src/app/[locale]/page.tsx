@@ -4,6 +4,7 @@ import { mr_dafoe } from "@/lib/fonts/index";
 import { Hero } from '@/app/components/Layout/Hero';
 
 import { Projects } from '@/app/components/Layout/Projects';
+
 import { About } from '@/app/components/Layout/About';
 export default function HomePage() {
   return (

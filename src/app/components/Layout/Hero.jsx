@@ -23,7 +23,7 @@ export const Hero = () => {
         <div className="z-10 flex flex-col lg:w-[900px] w-[400px] align-center">
           <img src="/signature.svg" alt="" className="lg:w-44 mx-auto mb-2 w-24" />
           <h1 className="font-unbounded text-3xl lg:text-6xl text-center font-medium masked-text">{t('title')}</h1>
-          <h2 className=" font-inter_tight text-base lg:text-2xl text-center font-normal mt-4 masked-text mx-2 text-black">{t('subtitle')}</h2>
+          <h2 className="  text-base lg:text-2xl text-center font-normal mt-4 masked-text mx-2 text-black">{t('subtitle')}</h2>
           <div className="mx-auto lg:pb-0 pb-4 lg:hidden">
             <a href="paumelia.com" className="bg-white text-black px-4 py-2 mx-auto mt-4 rounded-3xl font-semibold font-inter_tight hover:scale-105 mb-4 flex items-center gap-2"> <img src="/icons/gmail-color.svg" alt="" className=" w-4 h-4" />Contact me</a>
           </div>
@@ -43,7 +43,7 @@ export const Hero = () => {
             </div>
           </div>
 
-          <nav className='lg:flex justify-center items-center  absolute bottom-[4.5rem] right-0 px-4 bg-white rounded-tl-xl list-none gap-4 font-inter_tight text-sm hidden py-3'>
+          <nav className='lg:flex justify-center items-center  absolute bottom-[4.5rem] right-0 px-4 bg-white rounded-tl-xl list-none gap-4 text-sm hidden py-3'>
           
           <a href="#projects" className="hover:bg-[#f7f7f9] text-black px-2 py-1 rounded-3xl hover:scale-105  flex items-center gap-2">{t('projects')}</a>
             <a href="#about" className="hover:bg-[#f7f7f9] text-black px-2 py-1 rounded-3xl hover:scale-105  flex items-center gap-2">{t('aboutMe')}</a>

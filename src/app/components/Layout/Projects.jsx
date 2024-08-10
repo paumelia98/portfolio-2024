@@ -58,14 +58,14 @@ export const Projects = () => {
         }
     ];
     return (
-        <div className="p-4 lg:px-12 lg:mt-12 mt-6 mx-4 ">
+        <section className="p-4 lg:px-12 lg:mt-12 mt-6 mx-4 ">
             <div>
                 <h2 className="text-3xl font-medium ">{t('title')}</h2>
                 <p className="font-extralight mt-3  mb-16">
                     {t('description')}
                 </p>
             </div>
-            <div class="grid lg:grid-cols-3 xl:gap-x-10 gap-x-10 lg:gap-y-20 gap-y-10 grid-rows-2">
+            <div class="grid md:grid-cols-2 xl:grid-cols-3 xl:gap-x-10 gap-x-10 lg:gap-y-20 gap-y-10 grid-rows-2">
 
                 {projects.map((project, index) => (
                     <Project
@@ -80,6 +80,6 @@ export const Projects = () => {
                     />
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
