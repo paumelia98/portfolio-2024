@@ -9,7 +9,7 @@ export const Hero = () => {
       <>
         <div className="lg:h-[calc(100vh-3rem)] relative overflow-hidden  rounded-xl mx-4 my-4 lg:mx-12 lg:my-6">
           <Header />
-          <div className="relative h-full flex justify-center   md:pt-0 2xl:pt-40">
+          <div className="relative h-full flex justify-center   lg:pt-16 2xl:pt-40">
         <video
           className="absolute top-0 left-0 w-full h-[50vh] lg:h-full object-cover rounded-b-xl border-0 -z-10 lg:opacity-100"
           src="/hero-bg.mp4"

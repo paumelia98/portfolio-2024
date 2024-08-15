@@ -8,7 +8,11 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
+    extend: { 
+      screens: {
+      'xl': '1280px',  // Mantener el valor predeterminado de xl si lo necesitas
+      '2xl': '1700px', // Definir 2xl a partir de 1700px
+    },
       backgroundImage: {},
       fontFamily: {
         unbounded: ['var(--font-unbounded)'],
