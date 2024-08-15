@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <>
 
-      <main className={` ${unbounded.variable} ${inter_tight.variable} ${mr_dafoe.variable}  overflow-hidden font-inter_tight`}>
+      <main className={` ${unbounded.variable} ${inter_tight.variable} ${mr_dafoe.variable}  overflow-hidden font-inter_tight px-4 py-4 lg:px-12 lg:py-6`}>
         <Hero />
         <Projects/>
         <About/>

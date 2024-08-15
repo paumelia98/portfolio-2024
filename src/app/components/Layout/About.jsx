@@ -1,8 +1,9 @@
-import { Accordion } from "@/app/components/Layout/Accordion";
+import Image from 'next/image'
+
 export const About = () => {
     return (
       <>
-        <section className="p-4 lg:px-12 mt-6 lg:mt-12">
+        <section className="p-2 lg:px-8 mt-6 lg:mt-12">
           <h2 className="text-3xl font-medium">My history</h2>
           <div className=" grid lg:grid-cols-2  text-normal font-light mt-4 text-black gap-20">
 
@@ -16,34 +17,12 @@ export const About = () => {
                 </p>
             </div> 
             
-            <div>
-            <Accordion title="Objetivos?">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-                odio. Praesent libero. Sed cursus ante dapibus diam.
-                </p>
-            </Accordion>
-            <Accordion title="Hobbies?">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-                odio. Praesent libero. Sed cursus ante dapibus diam.
-                </p>
-            </Accordion>
-            <Accordion title="Futuro?">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-                odio. Praesent libero. Sed cursus ante dapibus diam.
-                </p>
-            </Accordion>
-            <Accordion title="Backend?">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-                odio. Praesent libero. Sed cursus ante dapibus diam.
-                </p>
-            </Accordion>
-            </div>
+           
         
           </div>
+
+       
+          
         </section>
       </>
     );

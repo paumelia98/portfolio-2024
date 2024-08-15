@@ -53,14 +53,15 @@ export const Projects = () => {
             subtitle: "Portfolio",
             stack: "React + Tailwind",
             imageUrl: "/portfoliov2.png",
-            link: "https://www.v2.paumelia.com",
+            link: "https://v2.paumelia.com",
             description: t('description_portfolio2022')
         }
     ];
     return (
-        <section className="p-4 lg:px-12 lg:mt-12 mt-6 mx-4 ">
+        <section className="p-2 lg:px-8 lg:mt-12 mt-6 mx-4 ">
             <div>
                 <h2 className="text-3xl font-medium ">{t('title')}</h2>
+               
                 <p className="font-extralight mt-3  mb-16">
                     {t('description')}
                 </p>

@@ -7,7 +7,7 @@ export const Hero = () => {
   const t = useTranslations('Hero');
     return (
       <>
-        <div className="lg:h-[calc(100vh-3rem)] relative overflow-hidden  rounded-xl mx-4 my-4 lg:mx-12 lg:my-6">
+        <div className="lg:h-[calc(100vh-3rem)] relative overflow-hidden  rounded-xl ">
           <Header />
           <div className="relative h-full flex justify-center   lg:pt-16 2xl:pt-40">
         <video
