@@ -65,7 +65,7 @@ export const Projects = () => {
                     {t('description')}
                 </p>
             </div>
-            <div class="grid md:grid-cols-2 xl:grid-cols-3 xl:gap-x-10 gap-x-10 lg:gap-y-20 gap-y-10 grid-rows-2">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 xl:gap-x-10 gap-x-10 lg:gap-y-20 gap-y-10 grid-rows-2">
 
                 {projects.map((project, index) => (
                     <Project
