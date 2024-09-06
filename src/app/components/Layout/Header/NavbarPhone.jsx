@@ -30,9 +30,12 @@ export const NavbarPhone = ({ menuOpen, closeMenu }) => {
                 <span className="font-inter_tight text-[12px] text-black font-light ">© 2024 Pau Melià.</span>
               </div>
               <div className="flex gap-2 ">
-                  <img src="icons/linkedin-color.svg" alt="" className="w-6" />
+                <a href="https://www.linkedin.com/in/pau-melia-altadill/">
+                <img src="icons/linkedin-color.svg" alt="" className="w-6" />
+                </a>
+              <a href="https://github.com/paumelia98/portfolio-2024">
                   <img src="icons/github-color.svg" alt="" className="w-6" />
-            
+                  </a>
               </div>
             
 
