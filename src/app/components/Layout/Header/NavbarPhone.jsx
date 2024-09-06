@@ -1,7 +1,7 @@
 export const NavbarPhone = ({ menuOpen, closeMenu }) => {
     return (
     
-        <div className={`lg:hidden fixed inset-x-0 bottom-0 bg-white p-8 rounded-t-xl shadow-lg transform ${menuOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'} transition-transform  duration-300 ease-in-out`}>
+        <div className={`lg:hidden z-20 fixed inset-x-0 bottom-0 bg-white p-8 rounded-t-xl shadow-lg transform ${menuOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'} transition-transform  duration-300 ease-in-out`}>
           
           <div className="mx-auto flex flex-col">
             

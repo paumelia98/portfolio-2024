@@ -20,5 +20,17 @@
       "description_campusVirtual": "A multi-page website for a virtual campus with over 3,000 students, including private messaging, calendars, and online classes, enhancing the educational experience.",
       "description_crossfit": "Developed a website tailored to the client's needs, focused on design, for a CrossFit company.",
       "description_portfolio2022": "Former personal portfolio."
-    }
+    },
+
+   "About": {
+    "title": "About Me",
+    "my_history": "My Story.",
+    "history": "My name is Pau, and I was born in 1998 in Tarragona, Catalonia, Spain. A few years ago, I began a higher education degree in IT, where I discovered my true passion: programming and web development. After finishing the degree, I decided to continue my education and started an online bachelor's degree in Computer Engineering at UOC. Currently, I am balancing my work as a front-end developer with my university studies, without any issues.",
+    "history2": "I have had the opportunity to work on projects that allowed me to apply and refine my skills in front-end development. One of the achievements I am most proud of is my participation in the Aprobatus project, a project built from scratch where we managed to get over 17,000 web contact requests in less than a year.",
+    "experience": "Experience",
+    "studies": "Education"
+}
+
+
+ 
   }

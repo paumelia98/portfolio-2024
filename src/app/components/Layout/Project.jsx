@@ -8,7 +8,7 @@ export const Project = ({ title, imageUrl, videoUrl, stack, subtitle, link, desc
 
     return (
         <article className='relative' >
-            <span className="absolute lg:right-10 right-2 top-2 bg-white px-2 py-1 rounded-xl text-sm z-40">{stack}</span>
+            <span className="absolute lg:right-10 right-2 top-2 bg-white px-2 py-1 rounded-xl text-sm z-10">{stack}</span>
             <a href={link}
             className="relative block hover:scale-105 transition-transform duration-300 rounded-lg shadow-md overflow-hidden"
             onMouseEnter={() => videoUrl && setHovered(true)}

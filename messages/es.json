@@ -21,8 +21,17 @@
       "description_campusVirtual": "Una web multipágina para un campus virtual con más de 3,000 alumnos, incluyendo funciones de mensajería privada, calendarios y clases online, mejorando la experiencia educativa.",
       "description_crossfit": "Desarrollo de una web adaptada a las necesidades del cliente, centrado en el diseño, para una empresa de CrossFit.",
       "description_portfolio2022": "Portfolio personal antiguo."
+    },
+
+    "About": {
+      "title": "Sobre mí",
+      "my_history": "Mi historia.",
+      "history":"Me llamo Pau y nací en 1998 en Tarragona, Catalunya, España. Hace unos años, comencé un grado superior de informática, donde descubrí mi verdadera pasión: la programación y el desarrollo web. Tras finalizar el grado superior, decidí continuar mi formación y empecé un grado universitario online en la UOC de Ingeniería Informática. Actualmente, estoy compaginando mi trabajo como desarrollador frontend con mis estudios universitarios, sin problema.",
+      "history2":"He tenido la oportunidad de trabajar en proyectos que me han permitido aplicar y perfeccionar mis habilidades en desarrollo frontend. Uno de los logros de los que me siento más orgulloso es mi participación en el proyecto Aprobatus, un proyecto desde 0 donde logramos obtener más de 17.000 solicitudes web de contacto en menos de un año.",
+      "experience": "Experiencia",
+      "studies": "Estudios"
+  
     }
-   
   }
   
 
