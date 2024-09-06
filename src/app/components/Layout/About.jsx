@@ -33,7 +33,7 @@ export const About = () => {
   ];
 
   return (
-    <section className="p-2 lg:px-8 mt-6 lg:mt-12">
+    <section className="p-2 lg:px-8 mt-6 lg:mt-12" id='about'>
       <h2 className="text-3xl font-medium mb-4 lg:mb-8">{t('title')}</h2>
       <div className="grid lg:grid-cols-4 text-normal font-light mt-4 text-black gap-20">
         <div className="col-span-3">
@@ -50,7 +50,7 @@ export const About = () => {
             </p>
           </article>
 
-          <div>
+          <div id='experience'>
             <h2 className="text-xl font-medium mb-4 lg:mb-8 mt-8">
             {t('experience')}
             </h2>

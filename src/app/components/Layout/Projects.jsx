@@ -58,7 +58,7 @@ export const Projects = () => {
         }
     ];
     return (
-        <section className="p-2 lg:px-8 lg:mt-12 mt-6 mx-4 ">
+        <section className="p-2 lg:px-8 lg:mt-12 mt-6 mx-4 " id="projects">
             <div>
                 <h2 className="text-3xl font-medium ">{t('title')}</h2>
                
