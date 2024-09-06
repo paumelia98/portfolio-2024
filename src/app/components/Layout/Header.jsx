@@ -25,8 +25,14 @@ export const Header = () => {
        
      
         <div className="flex gap-4 items-center">
-          <span className=" text-[14px] underline lg:block hidden">Download CV</span>
-          <span className=" text-[14px] lg:block hidden">Contact</span>
+          <a 
+            href="docus/2024_PauMelià.pdf" 
+            download 
+            className="text-[14px] underline lg:block hidden"
+          >
+            Download CV
+          </a>
+          <a href='mailto:paumelia98@gmail.com' className=" text-[14px] lg:block hidden">Contact</a>
           <div className='flex gap-2'>
           <a href="/es"><img src="/flags/es-flag.svg" alt="" className='w-4 hover:scale-110' /></a>
          <a href="/en"> <img src="/flags/uk-flag.svg" alt="" className='w-4 hover:scale-110' /></a>
