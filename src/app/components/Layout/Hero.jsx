@@ -48,7 +48,7 @@ export const Hero = () => {
           <a href="#projects" className="hover:bg-[#f7f7f9] text-black px-2 py-1 rounded-3xl hover:scale-105  flex items-center gap-2">{t('projects')}</a>
             <a href="#about" className="hover:bg-[#f7f7f9] text-black px-2 py-1 rounded-3xl hover:scale-105  flex items-center gap-2">{t('aboutMe')}</a>
             <a href="#experience" className="hover:bg-[#f7f7f9] text-black px-2 py-1 rounded-3xl hover:scale-105  flex items-center gap-2">{t('experience')}</a>
-            <a href="mail:paumelia98@gmail.com" className="bg-black text-white px-2 py-1 rounded-3xl hover:scale-105  flex items-center gap-2"> <img src="/icons/gmail-color.svg" alt="" className=" w-4 h-4" />{t('contactMe')}</a>
+            <a href="mailto:paumelia98@gmail.com" className="bg-black text-white px-2 py-1 rounded-3xl hover:scale-105  flex items-center gap-2"> <img src="/icons/gmail-color.svg" alt="" className=" w-4 h-4" />{t('contactMe')}</a>
 
       
         
