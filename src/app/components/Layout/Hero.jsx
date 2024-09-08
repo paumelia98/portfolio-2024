@@ -1,4 +1,5 @@
 import { Header } from '@/app/components/Layout/Header';
+import Image from 'next/image';
 
 import {useTranslations} from 'next-intl';
 
@@ -31,14 +32,14 @@ export const Hero = () => {
           <div className="absolute bottom-20 left-0 p-4 lg:px-12 flex-col hidden lg:block">
         
             <div className="flex gap-4">
-              <a href="">
-                <img src="/icons/linkedin.svg" alt="Logo Linkedin" className="w-8 h-8 hover:scale-125 icons" />
+              <a href="https://www.linkedin.com/in/pau-melia-altadill/">
+                <Image src="/icons/linkedin.svg" alt="Logo Linkedin" className="w-8 h-8 hover:scale-125 icons" />
               </a>
-              <a href="">
-                <img src="/icons/github.svg" alt="Logo Github" className="w-8 h-8 hover:scale-125 icons" />
+              <a href="https://github.com/paumelia98">
+                <Image src="/icons/github.svg" alt="Logo Github" className="w-8 h-8 hover:scale-125 icons" />
               </a>
-              <a href="">
-                <img src="/icons/gmail.svg" alt="Logo Gmail" className="w-8 h-8 hover:scale-125 icons" />
+              <a href="mailto:paumelia98@gmail.com">
+                <Image src="/icons/gmail.svg" alt="Logo Gmail" className="w-8 h-8 hover:scale-125 icons" />
               </a>
             </div>
           </div>
