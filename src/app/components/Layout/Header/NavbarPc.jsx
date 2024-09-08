@@ -23,7 +23,7 @@ export const NavbarPc = ({ menuOpen, closeMenu }) => {
           </div>
 
           <div className="mx-auto flex flex-col">
-          <img src="/signature.svg" alt="" className=" mx-auto mb-2 w-24" />
+          <img src="/signature.svg" alt="" className=" mx-auto mb-2 w-24 h-24" />
               <div className="flex gap-2 mb-3 mx-auto">
                   <img src="icons/linkedin-color.svg" alt="" className="w-6" />
                   <img src="icons/github-color.svg" alt="" className="w-6" />
