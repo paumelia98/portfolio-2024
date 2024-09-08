@@ -22,13 +22,13 @@ export const About = () => {
       school: 'UOC - Universitat Oberta de Catalunya',
       title: 'Ingeniería Informática',
       years: '2021 - Present ',
-      imageUrl: 'uoc.png',
+      imageUrl: '/uoc.png',
     },
     {
       school: 'Institut Francesc Vidal i Barraquer',
       title: 'Grado Superior en Administración de Sistemas Informáticos en red.',
       years: '2017 - 2019',
-      imageUrl: 'vidal.png',
+      imageUrl: '/vidal.png',
     },
   ];
 
@@ -80,7 +80,7 @@ export const About = () => {
               <div key={index}>
                 <div className="flex flex-col lg:flex-row justify-between mb-4 mt-2">
                   <div className="flex gap-2 items-center">
-                    <img
+                    <Image
                       src={study.imageUrl}
                       alt={`logo ${study.school}`}
                       width={24}

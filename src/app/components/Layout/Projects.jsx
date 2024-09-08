@@ -13,7 +13,7 @@ export const Projects = () => {
     const projectsRef = useRef([]);
 
     useLayoutEffect(() => {
-        if (typeof window !== "undefined") {  // Asegurarte de que estás en el cliente
+        if (typeof window !== "undefined") {  
             projectsRef.current.forEach((el, index) => {
                 gsap.fromTo(el,
                     { opacity: 0, y: 50 },
@@ -21,7 +21,7 @@ export const Projects = () => {
                         opacity: 1,
                         y: 0,
                         duration: 0.8,
-                        delay: index * 0.2,
+                        delay: index * 0.1,
                         scrollTrigger: {
                             trigger: el,
                             start: "top 80%",

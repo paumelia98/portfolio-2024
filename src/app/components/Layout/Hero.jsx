@@ -22,7 +22,7 @@ export const Hero = () => {
 
         <div className="absolute top-0 left-0 w-full h-[50%] z-0 rounded-b-xl"></div>
         <div className="z-10 flex flex-col lg:w-[900px] w-[400px] align-center">
-          <img src="/signature.svg" alt="" className="lg:w-44 mx-auto mb-2 w-24" />
+          <img src="/signature.svg" alt="" className="lg:w-44 mx-auto mb-2 w-24 h-auto" />
           <h1 className="font-unbounded text-3xl lg:text-6xl text-center font-medium masked-text">{t('title')}</h1>
           <h2 className="  text-base lg:text-2xl text-center font-normal mt-4 masked-text mx-2 text-black">{t('subtitle')}</h2>
           <div className="mx-auto lg:pb-0 pb-4 lg:hidden">
@@ -33,13 +33,13 @@ export const Hero = () => {
         
             <div className="flex gap-4">
               <a href="https://www.linkedin.com/in/pau-melia-altadill/">
-                <Image src="/icons/linkedin.svg" alt="Logo Linkedin" className="w-8 h-8 hover:scale-125 icons" />
+                <Image src="/icons/linkedin.svg" alt="Logo Linkedin" className="w-8 h-8 hover:scale-125 icons" width="32" height="32" />
               </a>
               <a href="https://github.com/paumelia98">
-                <Image src="/icons/github.svg" alt="Logo Github" className="w-8 h-8 hover:scale-125 icons" />
+                <Image src="/icons/github.svg" alt="Logo Github" className="w-8 h-8 hover:scale-125 icons" width="32" height="32"/>
               </a>
               <a href="mailto:paumelia98@gmail.com">
-                <Image src="/icons/gmail.svg" alt="Logo Gmail" className="w-8 h-8 hover:scale-125 icons" />
+                <Image src="/icons/gmail.svg" alt="Logo Gmail" className="w-8 h-8 hover:scale-125 icons" width="32" height="32" />
               </a>
             </div>
           </div>
