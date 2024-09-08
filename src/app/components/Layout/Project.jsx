@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
@@ -15,10 +16,11 @@ export const Project = ({ title, imageUrl, videoUrl, stack, subtitle, link, desc
             onMouseLeave={() => videoUrl && setHovered(false)}
             aria-label={`Project: ${title}`}  style={{ paddingBottom: '55%' }} > 
                 {!hovered ? (
-                    <img
+                    <Image
                         src={imageUrl}
                         className="absolute inset-0 w-full h-full object-cover"
                         alt={title}
+                         layout="fill"
                         onError={() => setImgError(true)}
                         style={{ display: imgError ? 'none' : 'block' }}
                     />
