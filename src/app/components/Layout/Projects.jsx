@@ -20,7 +20,7 @@ export const Projects = () => {
                     {
                         opacity: 1,
                         y: 0,
-                        duration: 1,
+                        duration: 0.8,
                         delay: index * 0.2,
                         scrollTrigger: {
                             trigger: el,
