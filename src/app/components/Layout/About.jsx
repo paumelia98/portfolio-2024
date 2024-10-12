@@ -6,15 +6,24 @@ export const About = () => {
 
   const experiences = [
     {
+      company: 'Zara Inditex -  Nunegal Consulting  ',
+      job: 'Frontend Developer',
+      years: 'Oct. 2024 - present',
+      imageUrl: '/zara_logo.svg',
+    },
+    {
       company: 'Aprobatus SL',
       job: 'Frontend Developer',
-      years: 'nov. 2022 - Present',
+      years: 'nov. 2022 - Oct. 2024',
+      imageUrl: '/aprobatus.png',
     },
     {
       company: 'Ceasfor',
       job: 'Frontend Developer Junior',
       years: 'jul. 2022 - nov. 2022',
+      imageUrl: '/ceasfor.ico',
     },
+    
   ];
 
   const studies = [
@@ -58,9 +67,17 @@ export const About = () => {
             {experiences.map((experience, index) => (
               <div key={index}>
                 <div className="flex flex-col lg:flex-row justify-between mb-4 mt-2">
-                  <div>
+                  <div className='flex gap-2 items-center'>
+                  <Image
+                      src={experience.imageUrl}
+                      alt={`logo ${experience.company}`}
+                      width={24}
+                      height={24}
+                    />
+                    <div>
                     <p className="font-semibold">{experience.company}</p>
                     <p className="text-slate-600">{experience.job}</p>
+                    </div>
                   </div>
                   <p className="text-slate-400 mt-2 lg:mt-0 lg:text-right items-end flex">
                     {experience.years}
