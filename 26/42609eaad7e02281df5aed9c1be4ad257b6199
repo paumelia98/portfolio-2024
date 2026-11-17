@@ -1,0 +1,21 @@
+src/app/components/Layout/Project.jsx
+  s_acfd828cccaea8::t_0ce35c3dca8832 4,8,12-13,15-16,19-45,58,63-64,67,91,113
+src/app/components/Layout/Projects.jsx
+  s_acfd828cccaea8::t_90860f6c21809a 43-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "2642609eaad7e02281df5aed9c1be4ad257b6199",
+  "prompts": {},
+  "sessions": {
+    "s_acfd828cccaea8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1eb31-f527-76b2-bbe1-aedf4d07e0c5",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "Pau Melia <paumal@ext.inditex.com>"
+    }
+  }
+}
