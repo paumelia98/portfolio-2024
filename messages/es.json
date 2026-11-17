@@ -14,7 +14,11 @@
   
     "Projects": {
       "title": "Proyectos",
-      "description": "He desarrollado con éxito varios proyectos que han contribuido al crecimiento de los clientes.",
+      "description": "Una selección de campañas, aplicaciones web y proyectos personales.",
+      "description_benitoAntonio": "Participé en el desarrollo frontend de la campaña digital para la colección de Zara con Bad Bunny.",
+      "description_reform": "Participé en el desarrollo frontend de la campaña en la que John Galliano reinterpreta prendas del archivo de Zara.",
+      "subtitle_historicalMap": "Atlas histórico",
+      "description_historicalMap": "Atlas interactivo para explorar cómo han cambiado las fronteras del mundo año a año, del 1 d. C. a la actualidad.",
       "description_portfolio2024": "Mi actual portfolio, destacando un enfoque en detalles minuciosos y un diseño minimalista pero innovador.",
       "description_laLiga": "Desarrollé una web para la cobertura en tiempo real de La Liga, ofreciendo resultados en directo, clasificaciones y videos resumenes de los partidos.",
       "description_aprobatus": "Una web que generó más de 17,000 solicitudes de información en su primer año, demostrando la efectividad de su diseño y funcionalidad.",

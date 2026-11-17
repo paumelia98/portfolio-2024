@@ -13,7 +13,11 @@
 
     "Projects": {
       "title": "Projects",
-      "description": "I have successfully completed several projects that have contributed to client growth.",
+      "description": "A selection of campaigns, web applications, and personal projects.",
+      "description_benitoAntonio": "I contributed to the front-end development of the digital campaign for Zara’s collection with Bad Bunny.",
+      "description_reform": "I contributed to the front-end development of the campaign in which John Galliano reimagines pieces from the Zara archive.",
+      "subtitle_historicalMap": "Historical atlas",
+      "description_historicalMap": "An interactive atlas that lets you explore how the world’s borders have changed year by year, from 1 CE to the present.",
       "description_portfolio2024": "My current portfolio, focusing on meticulous details and a minimalist innovative design.",
       "description_laLiga": "I developed a website for real-time coverage of La Liga, featuring live scores, standings, and video highlights",
       "description_aprobatus": "A website that generated over 17,000 information requests in its first year, proving the effectiveness of its design and functionality.",

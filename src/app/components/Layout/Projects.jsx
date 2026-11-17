@@ -1,7 +1,7 @@
 "use client";
 
 import { Project } from "@/app/components/Layout/Project";
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const Projects = () => {
     const t = useTranslations('Projects');
+    const locale = useLocale();
     const projectsRef = useRef([]);
 
     useLayoutEffect(() => {
@@ -34,6 +35,31 @@ export const Projects = () => {
     }, []);
 
     const projects = [
+        {
+            title: "Zara × Bad Bunny",
+            subtitle: "Benito Antonio",
+            stack: "Frontend · Zara",
+            imageUrl: "/projects/benito-antonio.jpg",
+            videoUrl: "/projects/benito-antonio.mp4",
+            videoControls: true,
+            link: `https://www.zara.com/es/${locale}/benito-antonio-mkt18018.html`,
+            description: t('description_benitoAntonio')
+        },
+        {
+            title: "Zara × John Galliano",
+            subtitle: "Re{form}",
+            stack: "Frontend · Zara",
+            coverTitle: "Re{form}",
+            link: `https://www.zara.com/es/${locale}/zara-reform-l19820.html`,
+            description: t('description_reform')
+        },
+        {
+            title: "HistoricalMap",
+            subtitle: t('subtitle_historicalMap'),
+            stack: "React · MapLibre GL",
+            imageUrl: "/projects/historicalmap.jpg",
+            description: t('description_historicalMap')
+        },
         {
             title: "Portfolio 2024",
             subtitle: "Portfolio",
@@ -95,21 +121,13 @@ export const Projects = () => {
                     {t('description')}
                 </p>
             </div>
-            <div className="grid md:grid-cols-2 xl:grid-cols-2 xl:gap-x-10 gap-x-10 lg:gap-y-20 gap-y-10 grid-rows-2">
+            <div className="grid md:grid-cols-2 gap-x-10 lg:gap-y-20 gap-y-10">
                 {projects.map((project, index) => (
                     <div
                         ref={(el) => projectsRef.current[index] = el}
-                        key={index}
+                        key={project.title}
                     >
-                        <Project
-                            title={project.title}
-                            subtitle={project.subtitle}
-                            stack={project.stack}
-                            imageUrl={project.imageUrl}
-                            videoUrl={project.videoUrl}
-                            link={project.link}
-                            description={project.description}
-                        />
+                        <Project {...project} />
                     </div>
                 ))}
             </div>
