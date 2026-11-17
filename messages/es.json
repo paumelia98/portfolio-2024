@@ -14,6 +14,7 @@
   
     "Projects": {
       "title": "Proyectos",
+      "otherProjects": "Otros proyectos",
       "description": "Una selección de campañas, aplicaciones web y proyectos personales.",
       "description_benitoAntonio": "Participé en el desarrollo frontend de la campaña digital para la colección de Zara con Bad Bunny.",
       "description_reform": "Participé en el desarrollo frontend de la campaña en la que John Galliano reinterpreta prendas del archivo de Zara.",

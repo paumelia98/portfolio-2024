@@ -1,6 +1,7 @@
 "use client";
 
 import { Project } from "@/app/components/Layout/Project";
+import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
@@ -79,17 +80,25 @@ export const Projects = () => {
             description: t('description_laLiga')
         },
         {
+            title: "Portfolio 2022",
+            subtitle: "Portfolio",
+            stack: "React + Tailwind",
+            imageUrl: "/portfoliov2.png",
+            link: "https://v2.paumelia.com",
+            description: t('description_portfolio2022')
+        }
+    ];
+
+    const otherProjects = [
+        {
             title: "Aprobatus",
-            subtitle: "Web",
             stack: "Wordpress + Bootstrap",
             imageUrl: "/aprobatus.png",
-            videoUrl: "/aprobatus.mp4",
             link: "https://aprobatus.es",
             description: t('description_aprobatus')
         },
         {
             title: "Campus Virtual",
-            subtitle: "Web",
             stack: "Laravel + Bootstrap",
             imageUrl: "/campus.png",
             link: "https://campus.ceasfor.com/public",
@@ -97,19 +106,10 @@ export const Projects = () => {
         },
         {
             title: "Crossfit",
-            subtitle: "Web",
             stack: "Wordpress",
             imageUrl: "/crossfit.png",
             link: "https://www.crossfittorredembarra.com",
             description: t('description_crossfit')
-        },
-        {
-            title: "Portfolio 2022",
-            subtitle: "Portfolio",
-            stack: "React + Tailwind",
-            imageUrl: "/portfoliov2.png",
-            link: "https://v2.paumelia.com",
-            description: t('description_portfolio2022')
         }
     ];
 
@@ -131,6 +131,33 @@ export const Projects = () => {
                     </div>
                 ))}
             </div>
+
+            <section className="mt-16 border-t border-gray-200 pt-6 lg:mt-20" aria-labelledby="other-projects">
+                <h3 id="other-projects" className="text-lg font-medium">{t('otherProjects')}</h3>
+                <ul className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    {otherProjects.map(({ title, stack, imageUrl, link, description }) => (
+                        <li key={title}>
+                            <a href={link} className="group flex items-center gap-3">
+                                <Image
+                                    src={imageUrl}
+                                    alt=""
+                                    width={96}
+                                    height={56}
+                                    className="h-14 w-24 shrink-0 rounded object-cover"
+                                />
+                                <div>
+                                    <h4 className="font-medium group-hover:underline underline-offset-4">
+                                        {title}
+                                        <img src="/icons/arrow-project.svg" alt="" className="ml-1 inline-block w-3" />
+                                    </h4>
+                                    <p className="text-xs text-gray-500">{stack}</p>
+                                </div>
+                            </a>
+                            <p className="mt-2 text-sm font-light text-gray-600">{description}</p>
+                        </li>
+                    ))}
+                </ul>
+            </section>
         </section>
     );
 };
