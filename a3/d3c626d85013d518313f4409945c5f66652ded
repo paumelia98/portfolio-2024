@@ -1,0 +1,23 @@
+messages/en.json
+  s_acfd828cccaea8::t_7cd5690d0c35ad 16
+messages/es.json
+  s_acfd828cccaea8::t_b7f568fd3d14ba 17
+src/app/components/Layout/Projects.jsx
+  s_acfd828cccaea8::t_f8d86a79831ba3 4,82-92,134-160
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "a3d3c626d85013d518313f4409945c5f66652ded",
+  "prompts": {},
+  "sessions": {
+    "s_acfd828cccaea8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1eb31-f527-76b2-bbe1-aedf4d07e0c5",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "Pau Melia <paumal@ext.inditex.com>"
+    }
+  }
+}
