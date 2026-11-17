@@ -1,0 +1,21 @@
+src/app/components/Layout/Project.jsx
+  s_3ed40add0434b6::t_0a3b439ae4bdc8 2,4-5,7-9,11-16,19-50,53-56,60,62-74,82-83,85,88
+src/app/components/Layout/Projects.jsx
+  s_3ed40add0434b6::t_6c7ef757a84480 4,13,38-62,124,128,130
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "6e6eb1d9167bace9ad5d899f4a7bbeba3a68adc4",
+  "prompts": {},
+  "sessions": {
+    "s_3ed40add0434b6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3d6896df-bdec-46e9-b073-90c18fcf4cef",
+        "model": "unknown"
+      },
+      "human_author": "Pau Melia <paumal@ext.inditex.com>"
+    }
+  }
+}
