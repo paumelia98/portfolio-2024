@@ -13,6 +13,7 @@ export const Project = ({
     const MediaFrame = link ? "a" : "div";
     const canPreviewVideo = videoUrl && !inlineAutoplay;
     const showVideo = videoUrl && (inlineAutoplay || hovered);
+    const projectName = <>{title} <span className="text-gray-500">/ {subtitle}</span></>;
 
     useEffect(() => {
         const video = inlineVideoRef.current;
@@ -46,7 +47,7 @@ export const Project = ({
             <span className="absolute lg:right-10 right-2 top-2 bg-white px-2 py-1 rounded-xl text-sm z-10 pointer-events-none">{stack}</span>
             <MediaFrame
                 href={link}
-                aria-label={link ? title : undefined}
+                aria-label={link ? videoLabel || title : undefined}
                 className={`relative block aspect-[20/11] rounded-lg shadow-md overflow-hidden ${link ? "hover:scale-105 transition-transform duration-300" : ""}`}
                 onMouseEnter={() => canPreviewVideo && setHovered(true)}
                 onMouseLeave={() => canPreviewVideo && setHovered(false)}
@@ -79,8 +80,12 @@ export const Project = ({
             </MediaFrame>
 
             <h3 className="font-medium text-xl mt-5 mb-1">
-                {title} <span className="text-gray-500">/ {subtitle}</span>
-                {link && <img src="/icons/arrow-project.svg" alt="" className="inline-block w-4 ml-2" />}
+                {link ? (
+                    <a href={link} className="hover:underline underline-offset-4">
+                        {projectName}
+                        <img src="/icons/arrow-project.svg" alt="" className="inline-block w-4 ml-2" />
+                    </a>
+                ) : projectName}
             </h3>
             <p className="font-light text-base">{description}</p>
             {relatedLinks && (

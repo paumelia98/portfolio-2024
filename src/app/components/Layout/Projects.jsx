@@ -35,6 +35,7 @@ export const Projects = () => {
         }
     }, []);
 
+    const benitoAntonioLink = `https://www.zara.com/es/${locale}/benito-antonio-mkt18018.html`;
     const projects = [
         {
             title: "Zara",
@@ -44,9 +45,10 @@ export const Projects = () => {
             videoUrl: "/projects/benito-antonio-campaign.mp4",
             videoLabel: "Benito Antonio (Bad Bunny)",
             inlineAutoplay: true,
+            link: benitoAntonioLink,
             description: t('description_zara'),
             relatedLinks: [
-                { title: "Benito Antonio (Bad Bunny)", href: `https://www.zara.com/es/${locale}/benito-antonio-mkt18018.html` },
+                { title: "Benito Antonio (Bad Bunny)", href: benitoAntonioLink },
                 { title: "Re{form} (John Galliano)", href: `https://www.zara.com/es/${locale}/zara-reform-l19820.html` },
                 { title: t('title_zaraAnniversary'), href: "https://www.youtube.com/watch?v=5IoxGEt9fpg" },
             ]
