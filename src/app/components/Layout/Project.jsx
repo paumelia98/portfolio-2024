@@ -1,19 +1,47 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 
 export const Project = ({
-    title, imageUrl, coverTitle, videoUrl, videoControls, stack, subtitle, link, description
+    title, imageUrl, coverTitle, videoUrl, inlineAutoplay, stack, subtitle, link, description
 }) => {
     const [hovered, setHovered] = useState(false);
     const [imgError, setImgError] = useState(false);
-    const hasMediaLink = link && !videoControls;
+    const inlineVideoRef = useRef(null);
+    const hasMediaLink = link && !inlineAutoplay;
     const MediaFrame = hasMediaLink ? "a" : "div";
-    const canPreviewVideo = videoUrl && !videoControls;
-    const showVideo = videoUrl && (videoControls || hovered);
+    const canPreviewVideo = videoUrl && !inlineAutoplay;
+    const showVideo = videoUrl && (inlineAutoplay || hovered);
     const projectName = <>{title} <span className="text-gray-500">/ {subtitle}</span></>;
+
+    useEffect(() => {
+        const video = inlineVideoRef.current;
+        if (!video) return;
+
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        let inView = false;
+        const syncPlayback = () => {
+            if (inView && !reducedMotion.matches) {
+                video.play().catch(() => {});
+            } else {
+                video.pause();
+            }
+        };
+        const observer = new IntersectionObserver(([entry]) => {
+            inView = entry.intersectionRatio >= 0.25;
+            syncPlayback();
+        }, { threshold: 0.25 });
+
+        observer.observe(video);
+        reducedMotion.addEventListener("change", syncPlayback);
+        return () => {
+            observer.disconnect();
+            reducedMotion.removeEventListener("change", syncPlayback);
+            video.pause();
+        };
+    }, [inlineAutoplay, videoUrl]);
 
     return (
         <article className="relative">
@@ -27,16 +55,16 @@ export const Project = ({
             >
                 {showVideo ? (
                     <video
+                        ref={inlineAutoplay ? inlineVideoRef : undefined}
                         src={videoUrl}
                         poster={imageUrl}
                         className="absolute inset-0 w-full h-full object-cover"
                         aria-label={title}
-                        controls={videoControls}
-                        autoPlay={!videoControls}
-                        loop={!videoControls}
+                        autoPlay={!inlineAutoplay}
+                        loop
                         muted
                         playsInline
-                        preload={videoControls ? "none" : "metadata"}
+                        preload={inlineAutoplay ? "none" : "metadata"}
                     />
                 ) : coverTitle ? (
                     <div
@@ -60,7 +88,7 @@ export const Project = ({
             </MediaFrame>
 
             <h3 className="font-medium text-xl mt-5 mb-1">
-                {videoControls && link ? (
+                {inlineAutoplay && link ? (
                     <a href={link} className="hover:underline underline-offset-4">
                         {projectName}
                         <img src="/icons/arrow-project.svg" alt="" className="inline-block w-4 ml-2" />
@@ -82,7 +110,7 @@ Project.propTypes = {
     imageUrl: PropTypes.string,
     coverTitle: PropTypes.string,
     videoUrl: PropTypes.string,
-    videoControls: PropTypes.bool,
+    inlineAutoplay: PropTypes.bool,
     stack: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     link: PropTypes.string,

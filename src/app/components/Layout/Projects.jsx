@@ -40,9 +40,9 @@ export const Projects = () => {
             title: "Zara × Bad Bunny",
             subtitle: "Benito Antonio",
             stack: "Frontend · Zara",
-            imageUrl: "/projects/benito-antonio.jpg",
-            videoUrl: "/projects/benito-antonio.mp4",
-            videoControls: true,
+            imageUrl: "/projects/benito-antonio-campaign.jpg",
+            videoUrl: "/projects/benito-antonio-campaign.mp4",
+            inlineAutoplay: true,
             link: `https://www.zara.com/es/${locale}/benito-antonio-mkt18018.html`,
             description: t('description_benitoAntonio')
         },
